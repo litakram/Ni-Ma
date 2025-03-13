@@ -5,7 +5,6 @@
 </br>
 </br>
 
-[![License](https://img.shields.io/badge/License-Apache2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0) [![Slack](https://img.shields.io/badge/Join-Slack-blue)](https://join.slack.com/t/forest-ai-workspace/shared_invite/zt-ga90t9yr-xI3Dc9sYd2T5l1Hdd8TeJQ) [![Website](https://img.shields.io/badge/View-Website-blue)](https://forestai.tech/)
 </div>
 
 ## Contents
@@ -13,7 +12,6 @@
 1. [Short description](#short-description)
 1. [Demo video](#demo-video)
 1. [How it Works](#how-it-works)
-1. [Project roadmap](#project-roadmap)
 1. [Getting started](#getting-started)
 1. [Built with](#built-with)
 1. [Authors](#authors)
@@ -66,14 +64,6 @@ Welcome to NIAMA ! A vigilant system that detects and alerts illegal deforestati
 
 </br>
 
-## Project Roadmap
-
-</br>
-</br>
-
-<div align="center">
-<img width="580" height="1500" src= https://github.com/Forest-AI/Platform-Info/blob/master/doc/asset/forest-ai-roadmap.png/>
-</div>
 
 ## Getting started
 
