@@ -1,0 +1,12 @@
+applications:
+  - name: data-service
+    buildpack: sdk-for-nodejs
+    command: npm start
+    instances: 1
+    memory: 256M
+    random-route: true
+    env:
+      OPTIMIZE_MEMORY: true
+    routes:
+      - route: data-service.eu-gb.cf.appdomain.cloud
+    timeout: 180

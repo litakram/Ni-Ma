@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="نعمة - مشروع حماية الغابات">
+    <meta name="author" content="mounseflit">
+    <title>نعمة</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css">
+
+    <!-- logo icon -->
+    <link rel="shortcut icon" href="assets/imgs/logo.png" type="image/x-icon">
+
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+
+    <!-- Bootstrap + main styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        #language-select {
+            top: 10px;
+            right: 20px;
+            color: #ffffff !important;
+            padding: 8px 30px;    
+            font-size: 16px;
+            font-weight: 500 !important;
+            border: none !important;
+            border-radius: 10px !important;
+            background-color: #155e2b;
+            cursor: pointer;
+        } 
+        #language-selec {
+            top: 10px;
+            right: 20px;
+            color: #ffffff !important;
+            padding: 8px 30px;    
+            font-size: 16px;
+            font-weight: 500 !important;
+            border: none !important;
+            border-radius: 10px !important;
+            background-color: #155e2b;
+            cursor: pointer;
+        } 
+    </style>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navigation -->
+    <nav class="navbar custom-navbar navbar-expand-lg navbar-dark" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="navbar-brand" style="margin-bottom: 10px !important;" href="#">
+                <img src="assets/imgs/logo.png" alt="نعمة">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border-color: #00000000 !important;">
+                <select id="language-selec" 
+                onchange="const languageSelec = document.getElementById('language-selec'); console.log(languageSelec.value); window.location.href = 'index-' + languageSelec.value + '.html';" 
+                class="bg-gray-100 rounded-lg py-2 mb-10 mt-3 px-2 pr-3 pl-3  text-gray-700 focus:outline-none " style="margin-top: -5px !important;">
+                <option value="en">English</option>
+                <option value="ar" selected>العربية</option>
+                <option value="fr">Français</option> 
+        </select>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto" >
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-family: 'Trebuchet MS', sans-serif; font-size: 18px !important; font-weight: 700; margin-top: 20px;" href="#home">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-family: 'Trebuchet MS', sans-serif; font-size: 18px !important; font-weight: 700; margin-top: 20px;" href="#service">الخدمات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-family: 'Trebuchet MS', sans-serif; font-size: 18px !important; font-weight: 700; margin-top: 20px;" href="#about">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-family: 'Trebuchet MS', sans-serif; font-size: 18px !important; font-weight: 700; margin-top: 20px !important;" href="#product">المنتجات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-family: 'Trebuchet MS', sans-serif; font-size: 18px !important; font-weight: 700; margin-top: 20px !important;" href="#contact">اتصل بنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-link relative">
+                            <select id="language-select" 
+                                    onchange="const languageSelect = document.getElementById('language-select'); console.log(languageSelect.value); window.location.href = 'index-' + languageSelect.value + '.html';" 
+                                    class="bg-gray-100 rounded-lg py-2 mb-4 px-4 pr-8 text-gray-700 focus:outline-none " style="margin-top: 17px !important;">
+                                    <option value="en">English</option>
+                                    <option value="ar" selected>العربية</option>
+                                    <option value="fr">Français</option> 
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- End Of Page Navigation -->
+
+    <!-- Page Header -->
+    <header class="header">
+        <div class="overlay">
+            <h6 class="subtitle" style="color: #000000; font-family: 'Trebuchet MS', sans-serif;">حماية غاباتنا من التهديدات</h6>
+            <h1 class="title" style="color: #000000; font-family: 'Trebuchet MS', sans-serif; font-weight: 900;">ن<span style="color: #218d42;">ع</span>م<span style="color: #218d42;">ة</span></h1>
+            <div class="buttons text-center">
+                <a href="https://forest-rangers-ai.web.app/" class="btn btn-primary rounded w-lg btn-lg my-1">تسجيل الدخول</a>
+                <a href="ai/index.html" class="btn btn-secondary rounded w-lg btn-lg my-1">جرب الصوت</a>
+            </div>
+        </div>
+    </header>
+    <!-- End Of Page Header -->
+
+    <!-- About Section -->
+    <section id="service">
+        <h6 class="section-title mb-6 text-center" style="font-family: 'Trebuchet MS', sans-serif; font-size: 50px; color: #218D42; font-weight: 900; margin-top: -50px;">خدماتنا</h6>
+        <!-- Box -->
+        <div class="box text-center" style="margin-top: -40px; margin-bottom: -50px;">
+            <div class="box-item">
+                <i class="ti-shine"></i>
+                <h6 class="box-title">جهاز إنترنت الأشياء بالطاقة الشمسية</h6>
+                <p>نحلل البيانات البيئية من خلال أجهزة الاستشعار الشمسية للكشف عن التهديدات مثل الحرائق أو الأنشطة غير القانونية.</p>
+            </div>
+            <div class="box-item">
+                <i class="ti-vector"></i>
+                <h6 class="box-title">تنبيهات مدعومة بالذكاء الاصطناعي</h6>
+                <p>نستخدم الذكاء الاصطناعي لتحليل البيانات الصوتية والاستشعار وإرسال تنبيهات لفرق الدورية مع استراتيجيات لحماية الغابات.</p>
+            </div>
+            <div class="box-item">
+                <i class="ti-mobile"></i>
+                <h6 class="box-title">تطبيق مخصص وتفاعل مباشر</h6>
+                <p>نوفر تطبيقًا مخصصًا وموقع ويب بواجهة سهلة الاستخدام لفرق الميدان للتفاعل مع النظام وإدارة التنبيهات.</p>
+            </div>
+        </div>
+        <!-- End of Box -->
+        <br><br>
+
+        <h6 class="section-title mb-6 text-center" id="about"></h6>
+
+        <div class="container" style="margin-top: 50px;">
+            <div class="row align-items-center">
+                <div class="col-md-5 col-lg-4">
+                    <img src="assets/imgs/logobig.png" alt="من نحن" class="w-100 img-thumbnail mb-2">
+                </div>
+                <div class="col-md-7 col-lg-8">
+                    <h6 class="section-title mb-3 text-center" style="font-family: 'Trebuchet MS', sans-serif; font-size: 50px; color: #218D42; font-weight: 900; margin-top: -50px;">من نحن</h6>                    <br>
+                    
+                    <p style="color:#000000;">
+                        مشروعنا هو حل مبتكر للاستجابة للكوارث وإدارة الأزمات، تم تطويره من قبل فريقنا خلال هاكاثون <strong>DEVJAM</strong>.
+                    </p>
+                    
+                    <p style="color:#000000;">
+                        نحن فريق مكون من <strong>ثلاثة طلاب متفانين</strong>، لدينا شغف بتسخير التكنولوجيا لتحسين جهود الاستجابة للطوارئ. مهمتنا هي إنشاء نظام أكثر ذكاءً وكفاءة لمساعدة المجتمعات في أوقات الأزمات.
+                    </p>
+                    
+                    <p style="color:#000000;">
+                        يعتمد حلّنا على <strong>تحليلات الذكاء الاصطناعي</strong> ومعالجة البيانات في الوقت الفعلي لتعزيز عملية اتخاذ القرار، وتحسين تخصيص الموارد، وتسريع أوقات الاستجابة في المناطق المتضررة من الكوارث.
+                    </p>
+                    
+                    <p style="color:#000000;">
+                        من خلال دمج المراقبة المتقدمة والتحليل التنبئي، يوفر مشروعنا للمستجيبين رؤى حاسمة، مما يضمن تدخلات أسرع وأكثر فاعلية أثناء حالات الطوارئ.
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- End of About Section -->
+
+
+    <!-- Product Section -->
+    <section id="product" class="has-bg-img2 py-md" style=" padding-top: 130px !important; padding-bottom: 130px !important;">
+        <div class="container text-center">
+            <h6 class="section-subtitle" style="font-family: 'Trebuchet MS', sans-serif; color: #6dff77; font-weight: 900;">كيف يعمل؟</h6>
+            <h6 class="section-title mb-6" style="font-family: 'Trebuchet MS', sans-serif; color: #ffffff;">نحن نعتني بالغابات من أجلك</h6>
+            <div class="widget mb-4">
+                <div class="widget-item" style="color: #ffffff; border-color: #6dff77;">
+                    <i class="ti-harddrives" style="color: #ffffff;"></i>
+                    <h4>جهاز نعمة</h4>
+                </div>
+                <div class="widget-item" style="color: #ffffff; border-color: #6dff77;">
+                    <i class="ti-location-pin" style="color: #ffffff;"></i>
+                    <h4>الموقع</h4>
+                </div>
+                <div class="widget-item" style="color: #ffffff; border-color: #6dff77;">
+                    <i class="ti-world" style="color: #ffffff;"></i>
+                    <h4>ذكاء اصطناعي</h4>
+                </div>
+                <div class="widget-item" style="color: #ffffff; border-color: #6dff77;">
+                    <i class="ti-server" style="color: #ffffff;"></i>
+                    <h4>قاعدة البيانات</h4>
+                </div>
+                <div class="widget-item" style="color: #ffffff; border-color: #6dff77;">
+                    <i class="ti-comments" style="color: #ffffff;"></i>
+                    <h4>التنبيهات</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Of Product Section -->
+
+    <!-- Contact Section -->
+    <section>
+        <br><br>
+        <h6 id="contact" class="section-title mb-6 text-center" style="font-family: 'Trebuchet MS', sans-serif; font-size: 50px; color: #218D42; font-weight: 900; margin-top: -30px;">اتصل بنا</h6>
+        <div class="container" style="margin-top: -50px;">
+            <div class="contact-card">
+                <div class="infos">
+                    <h6 class="section-subtitle">تواصل معنا</h6>
+                    <h6 class="section-title mb-4">اتصل بنا</h6>
+                    <div class="item">
+                        <i class="ti-location-pin"></i>
+                        <div class="">
+                            <h5>الموقع</h5>
+                            <p>casablanca</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="ti-mobile"></i>
+                        <div>
+                            <h5>رقم الهاتف</h5>
+                            <p>+212688653716</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="ti-email"></i>
+                        <div class="mb-0">
+                            <h5>البريد الإلكتروني</h5>
+                            <p>litnitiakram1@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form">
+                    <h6 class="section-subtitle">متاحون على مدار الساعة</h6>
+                    <h6 class="section-title mb-4">تواصل معنا</h6>
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="أدخل بريدك الإلكتروني" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="الموضوع" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="contact-message" id="" cols="30" rows="3" class="form-control form-control-lg" placeholder="الرسالة"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block btn-lg mt-3">إرسال الرسالة</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Of Contact Section -->
+
+    <!-- Footer -->
+    <section class="has-bg-img py-0">
+        <div class="container">
+            <div class="footer">
+                <div class="footer-lists">
+                    <ul class="list">
+                        <li class="list-head">
+                            <h6 class="font-weight-bold">عنا</h6>
+                        </li>
+                        <li class="list-body">
+                            <a href="#" class="logo">
+                                <img src="assets/imgs/logo.png" alt="x">
+                                <h6>حماة الغابات</h6>
+                            </a>
+                            <p>نحن فريق مكون من 4 أعضاء، لدينا شغف مشترك بالغابات والذكاء الاصطناعي وإنترنت الأشياء والابتكار.</p>
+                            <p class="mt-3">
+                                حقوق الطبع والنشر
+                                <script>document.write(new Date().getFullYear())</script> &copy; <a class="d-inline text-primary" href="http://mounseflit.surge.sh">نعمة</a>
+                            </p>
+                        </li>
+                    </ul>
+                    <ul class="list">
+                        <li class="list-head">
+                            <h6 class="font-weight-bold">روابط مفيدة</h6>
+                        </li>
+                        <li class="list-body">
+                            <div class="row">
+                                <div class="col">
+                                    <a href="#">الرئيسية</a>
+                                    <a href="#service">الخدمة</a>
+                                </div>
+                                <div class="col">
+                                    <a href="#about">حول</a>
+                                    <a href="#contact">اتصل بنا</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="list">
+                        <li class="list-head">
+                            <h6 class="font-weight-bold">معلومات الاتصال</h6>
+                        </li>
+                        <li class="list-body">
+                            <p>طرق الاتصال بنا:</p>
+                            <p><i class="ti-location-pin"></i> casablanca</p>
+                            <p><i class="ti-email"></i> litnitiakram1@gmail.com</p>
+                            <p><i class="ti-mobile"></i> +212688653716</p>
+                            <div class="social-links">
+                                <a href="" class="link"><i class="ti-instagram"></i></a>
+                                <a href="" class="link"><i class="ti-facebook"></i></a>
+                                <a href="" class="link"><i class="ti-linkedin"></i></a>
+                                <a href="" class="link"><i class="ti-twitter-alt"></i></a>
+                                <a href="" class="link"><i class="ti-github"></i></a>
+                                <a href="" class="link"><i class="ti-email"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Of Footer -->
+<!-- Plug-In Code Start -->
+<link rel="stylesheet" href="https://bot-in.surge.sh/cdn/bot-in.css">
+<div class="chatbot-bubble2024" id="chatbot-bubble2024"><img src="https://img.icons8.com/ios-filled/50/000000/chat.png" id="chat-icon2024" alt="Chatbot"></div><div id="chat-container2024" class="chat-container2024"><div id="chatbox2024" class="chatbox2024"></div><div class="message-bar2024"> <input class="message-input2024" id="messageInput2024" type="text" placeholder="Type your question here..." /><button class="send-button2024" type="button" id="sendButton2024">Ask</button></div></div>
+<script src="https://bot-in.surge.sh/cdn/bot-in.js"></script>
+<!-- Plug-In Code End -->
+    <!-- JS Files -->
+    <script src="assets/vendors/jquery/jquery.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Ni'ma - Projet de Conservation des Forêts">
+    <meta name="author"  content="mounseflit">
+    <title>Ni'ma</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css">
+
+    <!-- logo icon -->
+    <link rel="shortcut icon" href="assets/imgs/logo.png" type="image/x-icon">
+
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+
+    <!-- Bootstrap + main styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        #language-select {
+            top: 10px;
+            right: 20px;
+            color: #ffffff !important;
+            padding: 8px 30px;    
+            font-size: 16px;
+            font-weight: 500 !important;
+            border: none !important;
+            border-radius: 10px !important;
+            background-color: #155e2b;
+            cursor: pointer;
+        } 
+        #language-selec {
+            top: 10px;
+            right: 20px;
+            color: #ffffff !important;
+            padding: 8px 30px;    
+            font-size: 16px;
+            font-weight: 500 !important;
+            border: none !important;
+            border-radius: 10px !important;
+            background-color: #155e2b;
+            cursor: pointer;
+        } 
+    </style>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navigation -->
+    <nav class="navbar custom-navbar navbar-expand-lg navbar-dark" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="navbar-brand" style="margin-bottom: 10px !important;" href="#">
+                <img src="assets/imgs/logo.png" alt="Ni'ma">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border-color: #00000000 !important;">
+                <select id="language-selec" 
+                onchange="const languageSelec = document.getElementById('language-selec'); console.log(languageSelec.value); window.location.href = 'index-' + languageSelec.value + '.html';" 
+                class="bg-gray-100 rounded-lg py-2 mb-10 mt-3 px-2 pr-3 pl-3  text-gray-700 focus:outline-none " style="margin-top: -5px !important;">
+                <option value="en">English</option>
+                <option value="ar">العربية</option>
+                <option value="fr" selected>Français</option> 
+        </select>
+            </button>
+
+           
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto" >
+                    <li class="nav-item">
+                        <a class="nav-link"  style="font-family: 'Trebuchet MS', sans-serif; font-size: 18px !important; font-weight: 700; margin-top: 20px;" href="#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-family: 'Trebuchet MS', sans-serif; font-size: 18px !important; font-weight: 700; margin-top: 20px;" href="#service">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-family: 'Trebuchet MS', sans-serif; font-size: 18px !important; font-weight: 700; margin-top: 20px;" href="#about">À Propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-family: 'Trebuchet MS', sans-serif; font-size: 18px !important; font-weight: 700; margin-top: 20px !important;" href="#product">Produits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-family: 'Trebuchet MS', sans-serif; font-size: 18px !important; font-weight: 700; margin-top: 20px !important;" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-link relative">
+                            <select id="language-select" 
+                                    onchange="const languageSelect = document.getElementById('language-select'); console.log(languageSelect.value); window.location.href = 'index-' + languageSelect.value + '.html';" 
+                                    class="bg-gray-100 rounded-lg py-2 mb-4 px-4 pr-8 text-gray-700 focus:outline-none " style="margin-top: 17px !important;">
+                                    <option value="en">English</option>
+                                    <option value="ar">العربية</option>
+                                    <option value="fr" selected>Français</option> 
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- End Of Page Navigation -->
+
+    <!-- Page Header -->
+    <header class="header">
+        <div class="overlay">
+            <h6 class="subtitle" style="color: #000000; font-family: 'Trebuchet MS', sans-serif;">Protéger Nos Forêts des Menaces</h6>
+            <h1 class="title" style="color: #000000; font-family: 'Trebuchet MS', sans-serif; font-weight: 900;">N<span style="color: #218d42;">i</span>'m<span style="color: #218d42;">a</span></h1>
+            <div class="buttons text-center">
+                <a href="https://forest-rangers-ai.web.app/" class="btn btn-primary rounded w-lg btn-lg my-1">Se Connecter</a>
+                <a href="ai/index.html" class="btn btn-secondary rounded w-lg btn-lg my-1">Essayer le Son</a>
+            </div>
+        </div>
+    </header>
+    <!-- End Of Page Header -->
+
+    <!-- About Section -->
+    <section id="service">
+        <h6 class="section-title mb-6 text-center" style="font-family: 'Trebuchet MS', sans-serif; font-size: 50px; color: #218D42; font-weight: 900; margin-top: -50px;">Nos Services</h6>
+        <!-- Box -->
+        <div class="box text-center" style="margin-top: -40px; margin-bottom: -50px;">
+            <div class="box-item">
+                <i class="ti-shine"></i>
+                <h6 class="box-title">Dispositif IoT Alimenté par Énergie Solaire</h6>
+                <p>Nous analysons les données environnementales grâce à des capteurs IoT alimentés par l'énergie solaire pour détecter les menaces telles que les incendies ou les activités illégales.</p>
+            </div>
+            <div class="box-item">
+                <i class="ti-vector"></i>
+                <h6 class="box-title">Alertes Alimentées par IA</h6>
+                <p>Nous utilisons l'IA pour analyser les sons et les données des capteurs et envoyer des alertes aux équipes de patrouille avec des stratégies pour la protection des forêts.</p>
+            </div>
+            <div class="box-item">
+                <i class="ti-mobile"></i>
+                <h6 class="box-title">Application Personnalisée et Interaction Directe</h6>
+                <p>Nous fournissons une application personnalisée et un site web avec une interface facile à utiliser pour les équipes sur le terrain afin d'interagir avec le système et de gérer les alertes.</p>
+            </div>
+        </div>
+        <!-- End of Box -->
+        <br><br>
+        <h6 class="section-title mb-6 text-center" id="about"></h6>
+        <div class="container" style="margin-top: 50px;">
+            <div class="row align-items-center">
+                <div class="col-md-5 col-lg-4">
+                    <img src="assets/imgs/logobig.png" alt="À Propos" class="w-100 img-thumbnail mb-1">
+                </div>
+                <div class="col-md-7 col-lg-8">
+                    <h6 class="section-title mb-3 text-center" style="font-family: 'Trebuchet MS', sans-serif; font-size: 50px; color: #218D42; font-weight: 900; margin-top: -50px;">À Propos de Nous</h6>
+                    <br>
+                    <p style="color:#000000;">Notre solution est une solution innovante pour la surveillance et la conservation de l'environnement, présentée par l'équipe des Rangers de la Forêt au hackathon GAIAthon '24.</p>
+                    <p style="color:#000000;">Nous sommes une équipe créative de cinq personnes partageant une passion commune pour l'environnement, l'intelligence artificielle et l'innovation. Nous croyons pouvoir faire la différence et protéger les forêts des menaces.</p>
+                    <p style="color:#000000;">Notre projet vise à fournir des solutions intégrées pour la protection des forêts contre les risques environnementaux et à améliorer le temps de réponse des équipes de patrouille grâce aux technologies de l'IA.</p>
+                    <p style="color:#000000;">Ni’ma vise à relever les défis de la déforestation en fournissant une surveillance en temps réel, permettant une intervention rapide et efficace, réduisant ainsi les dommages et les risques.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of About Section -->
+
+
+
+     <!-- Service Section -->
+
+     <section id="product" class="has-bg-img2 py-md" style=" padding-top: 130px !important; padding-bottom: 130px !important;">
+        <div class="container text-center">
+            <h6 class="section-subtitle" style="font-family: 'Trebuchet MS', sans-serif;  color: #6dff77; font-weight: 900;">Nos Produits</h6>
+            <h6 class="section-title mb-6" style="font-family: 'Trebuchet MS', sans-serif;  color: #ffffff;">Nous intégrons les dernières technologies en matière d'IoT et d'IA.</h6>
+            <div class="widget mb-4">
+               
+                
+                <div class="widget-item" style="color:  #ffffff; border-color: #6dff77;">
+                    <i class="ti-harddrives" style="color:  #ffffff;;"></i>
+                    <h4>Appariel IoT</h4>
+                </div>
+                <div class="widget-item" style="color:  #ffffff; border-color: #6dff77;">
+                    <i class="ti-location-pin" style="color:  #ffffff;"></i>
+                    <h4>Localisation</h4>
+                </div>
+                <div class="widget-item" style="color:  #ffffff; border-color:  #6dff77;">
+                    <i class="ti-world" style="color:  #ffffff;"></i>
+                    <h4>I.A</h4>
+                </div>
+                <div class="widget-item" style="color:  #ffffff; border-color:  #6dff77;">
+                    <i class="ti-server" style="color:  #ffffff;"></i>
+                    <h4>B.D</h4>
+                </div>
+                <div class="widget-item" style="color: #ffffff; border-color:  #6dff77;">
+                    <i class="ti-comments" style="color:  #ffffff;"></i>
+                    <h4>Alertes</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Of Service Section -->
+
+
+
+    <!-- Contact Section -->
+    <section>
+        <br><br>
+        <h6 id="contact" class="section-title mb-6 text-center" style="font-family: 'Trebuchet MS', sans-serif; font-size: 50px; color: #218D42; font-weight: 900; margin-top: -30px;">Contact Us</h6>
+        <div class="container" style="margin-top: -50px;" >
+            <div class="contact-card">
+                <div class="infos">
+                    <h6 class="section-subtitle">Alors...</h6>
+                    <h6 class="section-title mb-4">Contactez-Nous</h6>
+
+                    <div class="item">
+                        <i class="ti-location-pin"></i>
+                        <div class="">
+                            <h5>Localisation</h5>
+                            <p>casablanca</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="ti-mobile"></i>
+                        <div>
+                            <h5>Télephone</h5>
+                            <p>+212688653716</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="ti-email"></i>
+                        <div class="mb-0">
+                            <h5>Email</h5>
+                            <p>litnitiakram1@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form">
+                    <h6 class="section-subtitle">Valable 24/7</h6>
+                    <h6 class="section-title mb-4">Envoyé un Message</h6>
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control form-control-lg" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Entrez votre email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control form-control-lg" id="exampleInputPassword1"
+                                placeholder="Entrez votre Objet" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="contact-message" id="" cols="30" rows="3"
+                                class="form-control form-control-lg" placeholder="Entrez votre Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block btn-lg mt-3">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+
+    <section class="has-bg-img py-0">
+        <div class="container">
+            <div class="footer">
+                <div class="footer-lists">
+                    <ul class="list">
+                        <li class="list-head">
+                            <h6 class="font-weight-bold">À PROPOS DE NOUS</h6>
+                        </li>
+                        <li class="list-body">
+                            <a href="#" class="logo">
+                                <img src="assets/imgs/logo.png" alt="x">
+                                <h6>Rangers de la Forêt</h6>
+                            </a>
+                            <p>Nous sommes une équipe créative de 4 membres partageant une passion pour les forêts, l'IA, l'IoT et l'innovation.</p>
+                            <p class="mt-3">
+                                Copyright
+                                <script>document.write(new Date().getFullYear())</script> &copy; <a
+                                    class="d-inline text-primary" href="http://mounseflit.surge.sh">Ni'Ma</a>
+                            </p>
+                        </li>
+                    </ul>
+                    <ul class="list">
+                        <li class="list-head">
+                            <h6 class="font-weight-bold">LIENS UTILES</h6>
+                        </li>
+                        <li class="list-body">
+                            <div class="row">
+                                <div class="col">
+                                    <a href="#">Accueil</a>
+                                    <a href="#service">Service</a>
+                                </div>
+                                <div class="col">
+                                    <a href="#about">À Propos</a>
+                                    <a href="#contact">Contact</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="list">
+                        <li class="list-head">
+                            <h6 class="font-weight-bold">INFOS DE CONTACT</h6>
+                        </li>
+                        <li class="list-body">
+                            <p>Façons de nous contacter :</p>
+                            <p><i class="ti-location-pin"></i>casablanca</p>
+                            <p><i class="ti-email"></i> litnitiakram1@gmail.com</p>
+                            <p><i class="ti-mobile"></i> +212688653716</p>
+                            <div class="social-links">
+                                <a href="" class="link"><i class="ti-instagram"></i></a>
+                                <a href="" class="link"><i class="ti-facebook"></i></a>
+                                <a href="" class="link"><i class="ti-linkedin"></i></a>
+                                <a href="" class="link"><i class="ti-twitter-alt"></i></a>
+                                <a href="" class="link"><i class="ti-github"></i></a>
+                                <a href="" class="link"><i class="ti-email"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!-- Plug-In Code Start -->
+<link rel="stylesheet" href="https://bot-in.surge.sh/cdn/bot-in.css">
+<div class="chatbot-bubble2024" id="chatbot-bubble2024"><img src="https://img.icons8.com/ios-filled/50/000000/chat.png" id="chat-icon2024" alt="Chatbot"></div><div id="chat-container2024" class="chat-container2024"><div id="chatbox2024" class="chatbox2024"></div><div class="message-bar2024"> <input class="message-input2024" id="messageInput2024" type="text" placeholder="Type your question here..." /><button class="send-button2024" type="button" id="sendButton2024">Ask</button></div></div>
+<script src="https://bot-in.surge.sh/cdn/bot-in.js"></script>
+<!-- Plug-In Code End -->
+
+  
+
+    <!-- JS Files -->
+    <script src="assets/vendors/jquery/jquery.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

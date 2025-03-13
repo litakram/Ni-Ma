@@ -1,0 +1,71 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+#SignupPageImage {
+  width: 40%;
+  margin-top: 8vh;
+}
+
+.signup-page {
+  margin-top: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 25vh;
+  margin-top: 6vh;
+}
+
+.right-elements {
+  text-align: right;
+}
+
+#signup-header-1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 70px;
+  color: #000000;
+}
+
+#signup-header-2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 70px;
+  color: #3f9620;
+}
+
+h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: right;
+  color: #606b78;
+  margin-bottom: 1vh;
+}
+
+p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: right;
+  color: #606b78;
+  margin-bottom: 7vh;
+  margin-top: 2vh;
+}
+
+a {
+  margin-top: 1vh;
+}

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Recognition UI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #e2e2e2, #ffffff);
+            color: #333;
+            overflow: hidden;
+            background: url('../assets/imgs/bg.png') center/cover no-repeat;
+        }
+
+        
+        .container {
+            text-align: center;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px 50px;
+            max-width: 800px;
+            width: 50%;
+        }
+
+        .container:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.3;
+            border-radius: 15px;
+            z-index: -1;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 42px;
+            color: #2d9143;
+        }
+
+        button {
+            background-color: #2d9143;
+            border: none;
+            color: #ffffff;
+            padding: 15px 30px;
+            font-size: 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #1f7a35;
+            transform: translateY(-2px);
+        }
+
+        button:active {
+            transform: translateY(1px);
+        }
+
+        .box-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 5px 0;
+        }
+
+        .box-item i {
+            font-size: 50px;
+            color: #2d9143;
+            margin-bottom: 10px;
+        }
+
+        .box-title {
+            font-size: 24px;
+            margin: 5px 0;
+            color: #333;
+        }
+
+        .box-item p {
+            font-size: 18px;
+            color: #666;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .about {
+            margin-top: 5px;
+            font-size: 18px;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        .about p {
+            margin: 5px 0;
+        }
+    
+
+        .label {
+            background-color: #ffffff;
+            border: 1px solid #d1d1d1;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin-top: 5px;
+            margin-left: -20px;
+            margin-right: 10px;
+            width: 100%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+    
+    
+
+        .icon {
+            font-size: 24px;
+            margin-right: 10px;
+            color: #000000;
+            font-family: 'Trebuchet MS', sans-serif;
+            font-size: 18px !important;
+            font-weight: 700; 
+        }
+
+        .progress-container {
+            flex-grow: 1;
+            margin: 10px;
+            position: relative;
+            height: 20px;
+            background-color: #eaeaea;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background-color: #2d9143;
+            width: 0%;
+            transition: width 0.3s;
+        }
+
+        .progress-text {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        
+
+        <div class="box-item" id="box">
+            <i class="fas fa-robot"></i>
+            <h2 class="box-title">AI-Powered Sound Recognition</h2>
+            <p>We use AI to analyze sounds of illegal activities like : Heavy Machines, Chain-Saws, Goats, Sheeps and Uncontrolled Grazing. Then we send alerts to patrol teams.</p>
+        </div>
+        <button id="btn" type="button" onclick="init()">Start Recognition</button>
+        <div id="label-container"></div>
+
+      
+    </div>
+</body>
+
+
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/speech-commands@0.4.0/dist/speech-commands.min.js"></script>
+
+  <script type="text/javascript">
+        const URL = "https://teachablemachine.withgoogle.com/models/3H6o2kzXR/";
+
+        async function createModel() {
+            const checkpointURL = URL + "model.json";
+            const metadataURL = URL + "metadata.json";
+
+            const recognizer = speechCommands.create(
+                "BROWSER_FFT",
+                undefined,
+                checkpointURL,
+                metadataURL
+            );
+
+            await recognizer.ensureModelLoaded();
+            return recognizer;
+        }
+
+        async function init() {
+            const recognizer = await createModel();
+            const classLabels = recognizer.wordLabels();
+            const labelContainer = document.getElementById("label-container");
+
+            // Clear previous labels
+            labelContainer.innerHTML = '';
+
+            classLabels.forEach(label => {
+                const div = document.createElement("div");
+                div.classList.add("label");
+
+                const icon = document.createElement("p");
+                icon.classList.add("icon");
+
+                // Set icon based on label
+                if (label === "Background Noise") {
+                    icon.innerText="Nothing ✨";
+                } else if (label === "ma3za") {
+                    icon.innerText="Grazing 🐐";
+                } else if (label === "mnchar") {
+                    icon.innerText="Machine 🚜";
+                }
+
+                document.getElementById("btn").style.display = "none";
+
+                const progressContainer = document.createElement("div");
+                progressContainer.classList.add("progress-container");
+
+                const progressBar = document.createElement("div");
+                progressBar.classList.add("progress-bar");
+                progressContainer.appendChild(progressBar);
+
+                const progressText = document.createElement("div");
+                progressText.classList.add("progress-text");
+                progressContainer.appendChild(progressText);
+
+                div.appendChild(icon);
+                div.appendChild(progressContainer);
+
+                labelContainer.appendChild(div);
+            });
+
+            recognizer.listen(result => {
+                const scores = result.scores;
+                classLabels.forEach((label, i) => {
+                    const progressBar = labelContainer.childNodes[i].querySelector(".progress-bar");
+                    const progressText = labelContainer.childNodes[i].querySelector(".progress-text");
+                    const percentage = (scores[i] * 100).toFixed(0);
+                    progressBar.style.width = percentage + "%";
+                    progressText.textContent = percentage + "%";
+                });
+            }, {
+                includeSpectrogram: true,
+                probabilityThreshold: 0.75,
+                invokeCallbackOnNoiseAndUnknown: true,
+                overlapFactor: 0.50
+            });
+
+            //Stop the recognition in 30 seconds.
+            // setTimeout(() => recognizer.stopListening(), 30000);
+        }
+    </script>
+</html>
