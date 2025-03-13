@@ -1,0 +1,37 @@
+swagger: '2.0'
+
+info:
+  version: "0.0.1"
+  title: Python Flask REST API
+
+consumes:
+  - text/plain
+
+produces:
+  - application/json
+
+paths:
+  /predict:
+    get:
+      parameters: 
+          - in: query
+            name: id
+            type: string
+            required: true
+            description: UUID of the audio clip sent from the Edge Device  
+      operationId: get
+      description: Get the prediction of chainsaw in the forest  
+      responses:
+        200:
+          description: "Presence of Chainsaw response"
+          schema:
+            $ref: "#/definitions/predictResponse"
+          examples:
+            application/json: { "status": "1"}
+
+definitions:
+  predictResponse:
+    type: "object"
+    properties:
+      status:
+        type: "string"
