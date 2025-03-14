@@ -1,20 +1,16 @@
-# forest-sensor
+# Ni-Ma sensor
 
 Forest AI's Sensor node that sends alerts to Forest AI cloud platform
 
 #### Hardware:
 
-1. Particle Argon Dev kit
+1. Particle Argon Dev kit or ESP2866
 2. Arduino Electrate Mic
 3. Connecting wires
 
 #### Connections:
 
 # ![Circuit](asset/circuit.png?raw=true)
-
-#### Setup a particle devboard:
-
-[Watch the setup video](https://www.youtube.com/watch?v=xK20wrWDduQ)
 
 #### Coding environment:
 
@@ -26,8 +22,8 @@ Go to integration section of [particle console](https://console.particle.io/devi
 
 ```json
 {
-  "event": "forest-ai-live",
-  "url": "https://forest-ai-console.firebaseio.com/Raw_Alert.json",
+  "event": "Ni-Ma-live",
+  "url": "https://Ni-Ma-console.firebaseio.com/Raw_Alert.json",
   "requestType": "POST",
   "noDefaults": true,
   "rejectUnauthorized": false,
