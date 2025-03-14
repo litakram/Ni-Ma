@@ -51,13 +51,6 @@ Welcome to NIAMA ! A vigilant system that detects and alerts illegal deforestati
 ## The architecture
 
 </br>
-</br>
-
-<div align="center">
-<img src= https://ni-ma.surge.sh/assets/imgs/GIF.gif>
-</div>
-
-</br>
 
 1. The **Forest Sensors** deployed in forest monitors and pushes raw alert into DB when unusual audio is heard
 2. **Data server** passes this raw data to **ML-service** which classifies alerts as chainsaw or no chainsaw. Both of the services are hosted on IBM Cloud Foundry
