@@ -1,6 +1,6 @@
 # Ni-Ma sensor
 
-Forest AI's Sensor node that sends alerts to Forest AI cloud platform
+Ni-Ma Sensor node that sends alerts to Ni-Ma platform
 
 #### Hardware:
 
