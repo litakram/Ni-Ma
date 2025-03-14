@@ -1,4 +1,4 @@
-# ml-server
+# Ni-Ma ML-server
 
 ## Machine learning service hosted on IBM cloud foundry
 
@@ -16,9 +16,6 @@
     <img src="https://img.shields.io/badge/license-Apache2-blue.svg?style=flat" alt="Apache 2">
 </p>
 
-
-
-# Our server is live at - [ML service](https://ml-server.eu-gb.cf.appdomain.cloud)
 
 # Deploy a Machine Learning Service application
 
