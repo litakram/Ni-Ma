@@ -6,7 +6,7 @@
 
 You can find a live running system to test at
 
-- [Forest Console](http://console.forestai.tech/home) - The admin webapp
+- [ni'ma](https://ni-ma.surge.sh)
 
 ![Console](doc/asset/console-screenshot.png?raw=true)
 
