@@ -10,7 +10,7 @@
 ## Contents
 
 1. [Short description](#short-description)
-1. [Demo video](#demo-video)
+1. [Demo](#Live-demo)
 1. [How it Works](#how-it-works)
 1. [Getting started](#getting-started)
 1. [Built with](#built-with)
