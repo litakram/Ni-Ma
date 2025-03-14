@@ -1,4 +1,4 @@
-# Forest AI Website
+# Ni-Ma React App Console
 
 ###### A ReactJS based web console to oversee the Forest AI network & data
 
