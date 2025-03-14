@@ -6,7 +6,7 @@ A NodeJS service that acts as bridge between ML-Server &amp; Realtime DB
 
 You can find a running system to test at
 
-- [Data Server](https://data-service.eu-gb.cf.appdomain.cloud) - Deployed on IBM Cloud
+- [ni'ma](https://niaama.surge.sh)
 
 
 ## How to Run !
