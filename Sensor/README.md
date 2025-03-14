@@ -36,7 +36,3 @@ Go to integration section of [particle console](https://console.particle.io/devi
   "body": "{\"lat\":{{lat}}, \"long\":{{long}}, \"location\":\"{{loc}}\", \"activity\":\"{{act}}\", \"time\":\"{{tim}}\"}"
 }
 ```
-
-Your Integration should look like this
-
-# ![Webhook](asset/webhook-page.png?raw=true)
