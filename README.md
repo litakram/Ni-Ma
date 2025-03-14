@@ -45,7 +45,7 @@ Welcome to NIAMA ! A vigilant system that detects and alerts illegal deforestati
 </br>
 
 <div align="center">
-<img src= https://github.com/Forest-AI/Platform-Info/blob/master/doc/asset/forest-ai.gif/>
+<img src= https://ni-ma.surge.sh/assets/imgs/GIF.gif>
 </div>
 
 ## The architecture
@@ -53,7 +53,9 @@ Welcome to NIAMA ! A vigilant system that detects and alerts illegal deforestati
 </br>
 </br>
 
-![Forest AI architecture](/doc/asset/forest-ai-architecture.png)
+<div align="center">
+<img src= https://ni-ma.surge.sh/assets/imgs/GIF.gif>
+</div>
 
 </br>
 
