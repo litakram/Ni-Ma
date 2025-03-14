@@ -89,4 +89,4 @@ You can find a running system to test at
 - **SADIKI ABDERAHMANE** - _Initial work_ - [ni'ma](https://niaama.surge.sh)
 
 
-# Forest-AI
+#Ni-Ma
