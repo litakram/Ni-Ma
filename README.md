@@ -75,9 +75,7 @@ This project is divided into independant repositories - go through each repo's i
 
 You can find a running system to test at
 
-- [Forest Console](http://console.forestai.tech/home) - The admin webapp
-- [Data Server](https://data-service.eu-gb.cf.appdomain.cloud) - The data orchestration server
-- [ML Service](https://ml-server.eu-gb.cf.appdomain.cloud) - The audio classifer service
+- [https://ni-ma.surge.sh](https://ni-ma.surge.sh)  or  [https://niaama.surge.sh](https://niaama.surge.sh)
 
 ## Built with
 
